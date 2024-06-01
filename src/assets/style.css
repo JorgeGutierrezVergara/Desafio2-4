@@ -1,0 +1,17 @@
+.form-group {
+  margin-bottom: 20px;
+}
+
+#card_error {
+  background-color: rgb(255, 200, 200);
+  border: solid 1px rgb(254, 154, 154);
+  font-weight: 500;
+  color: rgb(128, 0, 0);
+}
+
+#card_exito {
+  background-color: rgb(174, 253, 189);
+  border: solid 1px rgb(84, 255, 96);
+  font-weight: 500;
+  color: rgb(11, 83, 0);
+}

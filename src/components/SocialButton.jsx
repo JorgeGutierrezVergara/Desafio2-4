@@ -7,7 +7,16 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 const Tags = ({ icon }) => {
   return (
     <>
-      <FontAwesomeIcon icon={icon} />
+      <FontAwesomeIcon
+        icon={icon}
+        style={{
+          height: "25px",
+          border: "1px solid black",
+          borderRadius: "50%",
+          padding: "12px",
+          margin: "8px",
+        }}
+      />
     </>
   );
 };

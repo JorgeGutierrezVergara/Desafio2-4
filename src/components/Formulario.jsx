@@ -1,7 +1,7 @@
 import { useState } from "react";
+import "../assets/style.css";
 
 const Formulario = ({ onFormSubmit }) => {
-  // Estados del formulario
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
   const [contra1, setContra1] = useState("");
@@ -33,52 +33,61 @@ const Formulario = ({ onFormSubmit }) => {
 
   return (
     <>
-      <form className="formulario" onSubmit={validarDatos}>
+      <form
+        className="formulario"
+        onSubmit={validarDatos}
+        style={{
+          borderRadius: "30%",
+          border: "1px solid black !important",
+          padding: "10px",
+          backgroundColor: "white",
+        }}
+      >
         <div className="form-group">
-          <label>Nombre</label>
           <input
             type="text"
             name="nombre"
             className="form-control"
             onChange={(e) => setNombre(e.target.value)}
+            placeholder="Nombre"
             value={nombre}
           />
         </div>
 
         <div className="form-group">
-          <label>Email</label>
           <input
             type="email"
             name="email"
             className="form-control"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
+            placeholder="tuemail@example.com"
           />
         </div>
 
         <div className="form-group">
-          <label>Contraseña</label>
           <input
-            type="text"
+            type="password"
             name="contra1"
             className="form-control"
             onChange={(e) => setContra1(e.target.value)}
             value={contra1}
+            placeholder="Contraseña"
           />
         </div>
 
         <div className="form-group">
-          <label>Confirma tu contraseña</label>
           <input
-            type="text"
+            type="password"
             name="contra2"
             className="form-control"
             onChange={(e) => setContra2(e.target.value)}
             value={contra2}
+            placeholder="Confirma tu contraseña"
           />
         </div>
-        <button type="submit" className="btn btn-primary">
-          Enviar
+        <button type="submit" className="btn btn-success w-100">
+          Registrarse
         </button>
       </form>
     </>
