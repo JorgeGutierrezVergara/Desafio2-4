@@ -16,8 +16,8 @@ const Formulario = ({ onFormSubmit }) => {
       onFormSubmit({ error: true });
       return;
     }
-    //if (contra1 != contra2) {
-    if (contra1 === contra2) {
+
+    if (contra1 != contra2) {
       setError(true);
       onFormSubmit({ error: "contra_error" });
       return;
