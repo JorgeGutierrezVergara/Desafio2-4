@@ -4,7 +4,7 @@ import "../assets/style.css";
 function Alert({ type }) {
   return (
     <>
-      {type === "contra" && ( //{type === "contra_error" && (
+      {type === "contra_error" && (
         <p className="card p-2 mt-2 mb-2" id="card_error">
           Las contraseñas son distintas.
         </p>
